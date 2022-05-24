@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="L'Occitane Customer Forms">
+    <meta name="author" content="alviansm alvians maulana">
+    
+    <!-- Icon & CSS Links -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <title>L'OCCITANE - Register</title>
+</head>
+<body>
+    <div id="root">
+        <!-- Informasi Halaman -->
+        <div class="header-yellow">            
+        </div>
+        <div class="header-info">
+            <a href="#" class="header-info-link">
+                <img class="header-info-link-logo" src="./images/logo.png" />
+            </a>
+        </div>
+        <div class="page-lang d-flex flex-row">
+            <label>Language: </label>
+            <select class="form-select" aria-label="Default select example">
+                <option value="1" selected>English</option>
+                <option value="2">Bahasa</option>
+            </select>
+            <span>
+                <i class="fa-solid fa-gear"></i>
+            </span>
+        </div>
+        <div class="header-text">
+            <p>You don't have an account yet, please create a new account</p>
+        </div>
+
+        <!-- Forms -->
+        <div class="container mt-5">
+            <form action="" method="">
+                <h5>Create New Account</h5>
+                <p class="mt-4 mb-1">
+                    <b>Title</b>
+                </p>
+                <div class="d-flex">                    
+                    <div class="form-check mx-2">
+                        <input class="form-check-input form-check-input-title" type="radio" name="title" id="title-mrs">
+                        <label class="form-check-label" for="title-mrs">
+                          Mrs
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input class="form-check-input form-check-input-title" type="radio" name="title" id="title-ms">
+                        <label class="form-check-label" for="title-ms">
+                          Ms
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input class="form-check-input form-check-input-title" type="radio" name="title" id="title-mdm">
+                        <label class="form-check-label" for="title-mdm">
+                          Mdm
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input class="form-check-input form-check-input-title" type="radio" name="title" id="title-mr">
+                        <label class="form-check-label" for="title-mr">
+                          Mr
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-title" type="radio" name="title" id="title-dr">
+                        <label class="form-check-label" for="title-dr">
+                          Dr
+                        </label>
+                    </div> <!-- End of Title -->
+                </div>
+
+                <!-- User Name -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <label class="label-input">Last Name <span style="color: red; font-size: 1.5rem;">*</span></label>
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lastname" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="label-input">First Name <span style="color: red; font-size: 1.5rem;">*</span></label>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="firstname" required>
+                    </div>
+                </div> 
+
+                <!-- User Mobile Number-->
+                <div class="row mt-4">
+                    <label class="label-input" for="user-country">Mobile Phone Number <span style="color: red; font-size: 1.5rem;">*</span></label>
+                    <div class="col-auto my-2">                        
+                        <select class="form-select" id="user-country" required>
+                          <option selected>Select Country</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-auto my-2">
+                        <div class="input-group">
+                        <div class="input-group-text">+852</div>
+                        <input type="text" class="form-control" id="user-phone" placeholder="Mobile phone number" required>
+                        </div>
+                    </div>
+                </div> <!-- End of mobile phone number-->
+
+                <h5 class="mt-4">Address</h5>
+
+                <!-- User address -->
+                <div class="row mt-4">
+                    <div class="col">
+                        <label class="label-input">Address</label>
+                        <input type="text" class="form-control" placeholder="Address" aria-label="Address" name="user-address">
+                    </div>
+                </div>
+                
+                <div class="row mt-4">                
+                    <div class="col">   
+                        <label class="label-input" for="user-location">Country/Location <span style="color: red; font-size: 1.5rem;">*</span></label>                     
+                        <select class="form-select" id="user-location" required>
+                          <option selected>Select Country/Location</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col">   
+                        <label class="label-input" for="user-country">Province/District <span style="color: red; font-size: 1.5rem;">*</span></label>                     
+                        <select class="form-select" id="user-country" required>
+                          <option selected>Province/District</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div> 
+
+                <h5 class="mt-4">Contacts</h5>
+
+                <!-- User contacts -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <label class="label-input">Email Address <span style="color: red; font-size: 1.5rem;">*</span></label>
+                        <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" name="user-email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="label-input">Date of birth <span style="color: red; font-size: 1.5rem;">*</span></label>
+                        <input type="date" class="form-control" name="user-birth" required>
+                    </div>
+                </div> 
+
+                <h5 class="mt-4">Standard Privacy Note</h5>
+
+                <p>
+                    <i>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nesciunt repellendus repudiandae nihil cumque temporibus illum labore autem eos ratione? Eius repellat hic ea minus sint laudantium, officiis quisquam natus temporibus cum. Vel consectetur aliquam exercitationem illo eum quae nobis voluptatum repudiandae, reiciendis, officiis rem quidem magni ipsum. Repudiandae, dolor!
+                    </i>
+                </p>
+                <p>
+                    <i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum atque repellendus facere rem, doloribus veritatis fuga magnam iusto, aperiam nesciunt voluptatem accusantium? A saepe unde at perspiciatis. Dicta modi amet blanditiis est, neque quaerat. Officia enim et voluptatem expedita exercitationem libero voluptates, dicta, minima in laboriosam, facere quod ullam.
+                    </i>
+                </p>
+                <p>
+                    <i>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis qui sed eius? Provident porro odit adipisci atque perferendis inventore sint necessitatibus est culpa iste cumque sequi ipsa, eum vero deleniti?
+                    </i>
+                </p>
+                <p>
+                    <i>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente veniam, quidem mollitia doloremque nostrum dolorem! Veniam cupiditate labore doloribus corporis? Iusto provident quas corporis placeat mollitia nulla laudantium eveniet.
+                    </i>
+                </p>
+                <p>
+                    <i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis quibusdam laudantium eaque maxime quis magnam quae enim suscipit dolorem delectus molestias blanditiis sint assumenda ipsum, dolore magni earum ad.
+                    </i>
+                </p>
+                <p>
+                    <i>
+                        I want to receive information or communication from L'OCCITANE
+                    </i>
+                </p>
+
+                <!-- Subscription -->
+                <div class="d-flex justify-content-between">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="user-subs-sms">
+                        <label class="form-check-label" for="user-subs-sms">SMS & Mobile Call</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="user-subs-email">
+                        <label class="form-check-label" for="user-subs-email">Emailing</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="user-subs-mail">
+                        <label class="form-check-label" for="user-subs-mail">Mailing</label>
+                    </div>  
+                </div>
+
+                <!-- Terms and condition -->
+                <div class="form-check mt-4">
+                    <input class="form-check-input" type="checkbox" id="user-tas" name="user-tas">
+                    <label class="form-check-label" for="flexCheckDefault" form="user-tas" required>
+                      <p>
+                          <i>
+                            I have read and understood the above terms and conditions and hereby agree that i will be bounded by these condition and policies once i have submitted this application form.
+                          </i>
+                      </p>
+                    </label>
+                </div>
+
+                <!-- Submit button -->
+                <div class="container-button-submit mt-4">
+                    <button type="submit" class="btn btn-primary btn-form-submit">Create Customer</button>
+                </div>
+            </form>
+        </div> <!-- End of Forms -->
+
+
+        <div class="container-fluid mt-4">
+            <footer class="d-flex justify-content-center">
+                <p style="font-size: 1.125rem;">
+                    <b>
+                        V1.0.7
+                    </b>
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

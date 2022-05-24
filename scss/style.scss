@@ -1,0 +1,15 @@
+@use 'custom';
+
+// Import components
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typograph';
+
+// Import sections
+@use 'sections/nav';
+@use 'sections/forms';
+
+html {
+    scroll-behavior: smooth;
+}
