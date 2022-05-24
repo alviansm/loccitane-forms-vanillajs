@@ -12,7 +12,7 @@ let selectedCountryIndex = 0;
 
 let countryData = [];
 
-$.getJSON("assets/js/country.json", function(data) {
+$.getJSON("assets/js/country.js", function(data) {
     countryData = data["countries"];
     arrCountry = countryData.map((c) => c.name);
     arrCountryCode = countryData.map((c) => c.code);
