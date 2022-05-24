@@ -5,7 +5,7 @@
 *Note*: Please contact me for suggestion, feedback, or further discussion, via github/instagram above. To install dependencies, run `npm install` at source code directory.
 
 ## Progress
-![](https://us-central1-progress-markdown.cloudfunctions.net/progress/85)
+![](https://us-central1-progress-markdown.cloudfunctions.net/progress/94)
 
 ## Tools
 - HTML
@@ -14,10 +14,9 @@
 - Bootstrap 5 (No JQuery) -> JQuery available on bootstrap 4
 - fontawesome
 - sass/scss
-- [https://izimodal.marcelodolza.com/#modal-large](https://izimodal.marcelodolza.com/#modal-large)
 
 ## ToDos
 - [X] Mobile phone API
 - [X] Highlights
-- [X] Modal (https://izimodal.marcelodolza.com/#modal-large)
+- [X] Modal
 - [X] Country API?
