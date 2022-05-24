@@ -9,6 +9,7 @@ const inputEmail = document.getElementById("user-email");
 const inputBirth = document.getElementById("user-birth");
 const btnSubmit = document.getElementById("form-register-submit");
 const badgeModal = document.getElementById("modal-badge");
+const btnToggleModal = document.getElementById("btn-toggle-modal");
 
 const displayLastName = document.getElementById("display-name-last");
 const displayFirstName = document.getElementById("display-name-first");
@@ -30,46 +31,38 @@ displayBirth.innerHTML = inputBirth.value;
 
 inputFirstName.addEventListener("change", () => {
     displayFirstName.innerHTML = inputFirstName.value;
-    validate();
 });
 
 inputLastName.addEventListener("change", () => {
     displayLastName.innerHTML = inputLastName.value;
-    validate();
 });
 
 inputPhone.addEventListener("change", () => {
     displayPhone.innerHTML = inputPhoneAbb.innerHTML+inputPhone.value;
-    validate();
 });
 
 inputAddress.addEventListener("change", () => {
     displayAddress.innerHTML = inputAddress.value;
-    validate();
 });
 
 inputLocation.addEventListener("change", () => {
     displayCountry.innerHTML = inputLocation.value;
-    validate();
 });
 
 inputDistrict.addEventListener("change", () => {
     displayDistrict.innerHTML = inputDistrict.value;
-    validate();
 });
 
 inputEmail.addEventListener("change", () => {
     displayEmail.innerHTML = inputEmail.value;
-    validate();
 });
 
 inputBirth.addEventListener("change", () => {
     displayBirth.innerHTML = inputBirth.value;
-    validate();    
 });
 
-function validate() {
-    if (inputBirth.value == '' || inputFirstName.value == '' || inputLastName.value == '' || inputPhone.value == '' || inputLocation.value == '' || inputEmail.value == '') {
+btnToggleModal.addEventListener("click", () => {
+    if (inputBirth.value == '' && inputFirstName.value == '' && inputLastName.value == '' && inputPhone.value == '' && inputLocation.value == '' && inputEmail.value == '') {        
         btnSubmit.classList.add('d-none');
         badgeModal.classList.remove('d-none');
     }
@@ -77,4 +70,4 @@ function validate() {
         btnSubmit.classList.remove('d-none');
         badgeModal.classList.add('d-none');
     }
-}
+});
