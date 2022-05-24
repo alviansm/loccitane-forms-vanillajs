@@ -17,7 +17,7 @@
 - [https://izimodal.marcelodolza.com/#modal-large](https://izimodal.marcelodolza.com/#modal-large)
 
 ## ToDos
-- [ ] Mobile phone API
-- [ ] Highlights
-- [ ] Modal (https://izimodal.marcelodolza.com/#modal-large)
-- [ ] Country API?
+- [X] Mobile phone API
+- [X] Highlights
+- [X] Modal (https://izimodal.marcelodolza.com/#modal-large)
+- [X] Country API?

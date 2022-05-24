@@ -11,6 +11,7 @@
     <!-- Icon & CSS Links -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.png" type="image/png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,11 +88,11 @@
                 <div class="row mt-4">
                     <div class="col-md-6">
                         <label class="label-input">Last Name <span style="color: red; font-size: 1.5rem;">*</span></label>
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lastname" required>
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="user-lastname" name="user-lastname" required>
                     </div>
                     <div class="col-md-6">
                         <label class="label-input">First Name <span style="color: red; font-size: 1.5rem;">*</span></label>
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="firstname" required>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="user-firstname" name="user-firstname" required>
                     </div>
                 </div> 
 
@@ -108,7 +109,7 @@
                     </div>
                     <div class="col-auto my-2">
                         <div class="input-group">
-                        <div class="input-group-text">+852</div>
+                        <div class="input-group-text" id="user-phone-abb">+852</div>
                         <input type="text" class="form-control" id="user-phone" placeholder="Mobile phone number" required>
                         </div>
                     </div>
@@ -120,7 +121,7 @@
                 <div class="row mt-4">
                     <div class="col">
                         <label class="label-input">Address</label>
-                        <input type="text" class="form-control" placeholder="Address" aria-label="Address" name="user-address">
+                        <input type="text" class="form-control" placeholder="Address" aria-label="Address" name="user-address" id="user-address">
                     </div>
                 </div>
                 
@@ -135,12 +136,12 @@
                         </select>
                     </div>
                     <div class="col">   
-                        <label class="label-input" for="user-country">Province/District <span style="color: red; font-size: 1.5rem;">*</span></label>                     
-                        <select class="form-select" id="user-country" required>
+                        <label class="label-input" for="user-district">Province/District <span style="color: red; font-size: 1.5rem;">*</span></label>                     
+                        <select class="form-select" name="user-district" id="user-district" required>
                           <option selected>Province/District</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                          <option value="1">District One</option>
+                          <option value="2">District Two</option>
+                          <option value="3">District Three</option>
                         </select>
                     </div>
                 </div> 
@@ -151,13 +152,22 @@
                 <div class="row mt-4">
                     <div class="col-md-6">
                         <label class="label-input">Email Address <span style="color: red; font-size: 1.5rem;">*</span></label>
-                        <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" name="user-email" required>
+                        <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" id="user-email" name="user-email" required>
                     </div>
                     <div class="col-md-6">
                         <label class="label-input">Date of birth <span style="color: red; font-size: 1.5rem;">*</span></label>
-                        <input type="date" class="form-control" name="user-birth" required>
+                        <input type="date" class="form-control" name="user-birth" id="user-birth" required>
                     </div>
                 </div> 
+
+                <div class="highlight highlight-top mt-3">
+                    <div class="highlight-triangle">
+
+                    </div>
+                    <p class="mt-0">
+                        Indulge in birthday treats just for you!
+                    </p>
+                </div>
 
                 <h5 class="mt-4">Standard Privacy Note</h5>
 
@@ -193,25 +203,34 @@
                 </p>
 
                 <!-- Subscription -->
-                <div class="d-flex justify-content-between">
-                    <div class="form-check form-switch">
+                <div class="d-md-flex d-md-align-items-center d-sm-justify-content-center d-sm-row">
+                    <div class="form-check form-switch col-sm">
                         <input class="form-check-input" type="checkbox" id="user-subs-sms">
                         <label class="form-check-label" for="user-subs-sms">SMS & Mobile Call</label>
                     </div>
-                    <div class="form-check form-switch">
+                    <div class="form-check form-switch col-sm">
                         <input class="form-check-input" type="checkbox" id="user-subs-email">
                         <label class="form-check-label" for="user-subs-email">Emailing</label>
                     </div>
-                    <div class="form-check form-switch">
+                    <div class="form-check form-switch col-sm">
                         <input class="form-check-input" type="checkbox" id="user-subs-mail">
                         <label class="form-check-label" for="user-subs-mail">Mailing</label>
                     </div>  
                 </div>
 
+                <div class="highlight highlight-bottom">
+                    <div class="highlight-triangle">
+
+                    </div>
+                    <p>
+                        Subscribe to SMS & Mobile call, Email * Mailing to receive updates about your membership perks and exclusive promotions!
+                    </p>
+                </div>
+
                 <!-- Terms and condition -->
                 <div class="form-check mt-4">
-                    <input class="form-check-input" type="checkbox" id="user-tas" name="user-tas">
-                    <label class="form-check-label" for="flexCheckDefault" form="user-tas" required>
+                    <input class="form-check-input" type="checkbox" id="user-tas" name="user-tas" required>
+                    <label class="form-check-label" for="flexCheckDefault" form="user-tas">
                       <p>
                           <i>
                             I have read and understood the above terms and conditions and hereby agree that i will be bounded by these condition and policies once i have submitted this application form.
@@ -220,10 +239,88 @@
                     </label>
                 </div>
 
-                <!-- Submit button -->
-                <div class="container-button-submit mt-4">
-                    <button type="submit" class="btn btn-primary btn-form-submit">Create Customer</button>
-                </div>
+                <!-- Button trigger modal -->
+                <div class="container-button-submit">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create Customer
+                    </button>
+                </div>                
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirmation <span class="badge bg-danger badge-sm" id="modal-badge">Fill the required input</span></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Please confirm that your data below is correct
+                            </p>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Data</th>
+                                    <th scope="col">Value</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Name <span style="color: red; font-size: 1.5rem;">*</span></td>
+                                    <td>
+                                        <span id="display-name-last">
+
+                                        </span>
+                                        <span>, </span>
+                                        <span id="display-name-first">
+
+                                        </span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Phone <span style="color: red; font-size: 1.5rem;">*</span></td>
+                                    <td id="display-phone"></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Address</td>
+                                    <td id="display-address"></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>Country <span style="color: red; font-size: 1.5rem;">*</span></td>
+                                    <td id="display-country"></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>District <span style="color: red; font-size: 1.5rem;">*</span></td>
+                                    <td id="display-district"></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>Email <span style="color: red; font-size: 1.5rem;">*</span></td>
+                                    <td id="display-email"></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td>Date of birth <span style="color: red; font-size: 1.5rem;">*</span></td>
+                                    <td id="display-birth"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="form-register-submit">Submit</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+
             </form>
         </div> <!-- End of Forms -->
 
@@ -237,6 +334,12 @@
                 </p>
             </footer>
         </div>
+
+        <!-- Script -->        
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="/assets/js/custom.js"></script>
+        <script src="/assets/js/modal-verification.js"></script>
     </div>
 </body>
 </html>

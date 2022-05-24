@@ -57,6 +57,35 @@
     }
 }
 
+.highlight {
+    background-color: $primary;
+    padding: .75rem;
+    border-radius: .25rem;
+}
+
+.highlight-triangle {
+    position: relative;
+    top: -24px;
+    left: 24px;
+    width: 0; 
+    height: 0; 
+    border-left: 1.125rem solid transparent;
+    border-right: 1.12rem solid transparent;
+    border-bottom: 1.125rem solid $primary;
+}
+
+.highlight-bottom {
+    margin-top: .75rem;
+    max-width: 480px;
+}
+
+.highlight-top {
+    position: relative;
+    right: -49%;
+    margin-top: .75rem;
+    max-width: 156px;
+}
+
 @media only screen and (max-width: 680px){
 	/*Big smartphones [426px -> 600px]*/
     .header-text {
@@ -85,5 +114,28 @@
         select {
             border: none;
         }
+    }
+
+    .highlight {
+        background-color: $primary;
+        padding: .75rem;
+        border-radius: .25rem;
+    }
+    
+    .highlight-triangle {
+        position: relative;
+        top: -24px;
+        left: 24px;
+        width: 0; 
+        height: 0; 
+        border-left: 1.125rem solid transparent;
+        border-right: 1.12rem solid transparent;
+        border-bottom: 1.125rem solid $primary;
+    }
+
+    .highlight-top {
+        position: static;
+        max-width: 90vw;
+        width: 100%;
     }
 }
