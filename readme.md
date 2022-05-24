@@ -1,8 +1,9 @@
 # L'OCCITANE FORMS PAGE (Vanilla JS)
 > author: alviansm [github](https://github.com/alviansm) [instagram](https://instagram.com/alviansmaulana)
-> Page Demo: (https://alviansm.github.io/loccitane-forms-vanillajs/)[https://alviansm.github.io/loccitane-forms-vanillajs/]
 <br>
-**Note:** Please contact me for suggestion, feedback, or further discussion, via github/instagram above. To install dependencies, run `npm install` at source code directory.
+> Page Demo: [https://alviansm.github.io/loccitane-forms-vanillajs/](https://alviansm.github.io/loccitane-forms-vanillajs/)
+<br>
+__Note:__ Please contact me for suggestion, feedback, or further discussion, via github/instagram above. To install dependencies, run `npm install` at source code directory.
 
 ## Progress
 ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/85)
